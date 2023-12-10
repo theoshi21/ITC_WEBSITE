@@ -211,6 +211,18 @@ hr{
 .logofooter a{
 	
     text-decoration: none;
+    background-color: white;
+    border: 8px solid white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+}
+
+.logofooter a:hover{
+  background-color: #E7DECC;
+  border: 12px solid #E7DECC;
 }
 
 .logofooter {
