@@ -1,0 +1,236 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  padding: 0;
+background-image: url('about.jpg');
+  background-repeat: no-repeat;
+ background-size: auto;
+
+}
+
+#navbar {
+ font-family: 'Oswald';
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 100px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+margin-left: 80px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#logo {
+	float:left;
+	  height: 210px;
+	  transition: 0.8s;
+	  padding: 10px -50px;
+	  transform: translate(-130px, -40px)
+}
+
+
+#brand {
+	font-size: 50px;
+	transform: translate(-50px, 25px);
+	float:left;
+	color:#F6F0DB;
+	opacity:0;
+	transition: 0.3s ease;
+	
+}
+
+#navbar.nav-colored {
+  background-color: #225742; /* Change background color here */
+  width: 100%
+  
+}
+
+#navbar-right {
+  transition: 0.4s;
+  float: right;
+  transform: translate(40px, 70px); /*move links */
+}
+
+#navbar-right a {
+	font-size: 25px;
+	position: relative;
+	float:right;
+  text-decoration: none;
+}
+
+#navbar-right a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: transparent;
+  transition: 0.3s ease; \
+}
+
+#navbar-right a:hover::before {
+
+  width: 100%; /* Full width on hover */
+  background-color: white; 
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px ;
+  }
+  
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+  
+}
+
+.ourstory {
+
+  font-family: 'Oswald';
+  margin-top: 300px;
+  color: white;
+  padding: 0px 250px;
+   font-size: 20px;
+
+}
+.when {
+	
+	font-family: 'Orbitron';
+  color: white;
+  transform:translate(0px, -40px);
+  padding: 0px 250px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+hr{
+	width: 10%;
+	height:10px;
+	background-color:white;
+	 transform:translate(-290%, -70px);
+}
+
+.lilypad p {
+	
+  font-family: 'Oswald';
+  color: white;
+  padding: 0px 250px;
+ font-size:20px;
+}
+
+.yarn-container{
+	margin-top: -120px;
+	position:relative;
+	background-image:url('about gradient.jpg');
+	height:2800px;
+	background-repeat: repeat-y;
+	 background-size: auto;
+}
+
+.veganyarn p{
+  font-family: 'Oswald';
+  color: white;
+  padding: 0px 250px;
+ font-size:20px;
+}
+
+#cat{
+	
+	float:right;
+	height: 500px;
+	transform:translate(20%, -50%);
+}
+
+
+.artisan{
+    width: 100%;
+    height: 50vh; 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    text-align: center;
+	color: white;
+	letter-spacing: 5px;
+	
+	transform: translate(0%, -22%);
+	font-family: 'Orbitron';
+	font-size: 35px;
+}
+	
+.artisan h1{
+	margin-top: 300px;
+}
+
+.pic-right {
+	
+	margin-top: 75px;
+	margin-left: 30px;
+	height: 365px;
+}
+
+.mark {
+      	
+      transform: translate(0px, 80px);
+ 
+	}
+
+
+.prompt{
+    position: relative;
+    font-family: oswald;
+	float:left;
+    color: white;
+	padding: 5px 20px;
+		z-index:99;
+		margin-top: 50px;
+}
+
+.prompt p{
+    line-height: 0.7;
+}
+.logofooter a{
+	
+    text-decoration: none;
+}
+
+.logofooter {
+    display: flex;
+    column-gap: 20px;
+	height: -30px;
+}
+
+
+.f-logo{
+
+    width: 40px;
+	
+}
+
+#background {
+	margin-top: -10px;
+    background: url(bg.png);
+	filter:blur(2px);
+	z-index:-2;
+	height: 420px;
+	
+}

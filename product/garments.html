@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Orbitron|Alike Angular' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            background-color: #F6F0DB;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1500px; 
+            margin: 0 auto; 
+        }
+
+        .outerproduct {
+            box-shadow: 0px 0px 0px 10px rgba(136, 209, 101, 0.35);
+            background-color: rgba(136, 209, 101, 0.35);
+            border-radius: 5px;
+            width: 100%; 
+            display: flex;
+            margin-bottom: 20px; 
+        }
+
+        .innerproduct {
+            background-color: #CDE488;
+            border-radius: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            font-size: 20px; 
+            line-height: 1.5;
+            font-family: Oswald;
+            letter-spacing: 2px;
+            transition: 0.5s;
+        }
+
+        img {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto; 
+            width: 90%;
+            height: auto; 
+            max-height: 200px; 
+        }
+
+        .category {
+            color: #4D5B36;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            font-size: 30px;
+            font-family: Oswald;
+            letter-spacing: 5px;
+            text-indent: 4%;
+            text-decoration-line: underline;
+        }
+
+        .price {
+            color: #264740;
+        }
+
+        .innerproduct:hover {
+            background-color: #97bb2a;
+        }
+
+        @media screen and (max-width: 600px) {
+            .innerproduct {
+                font-size: 16px; 
+            }
+
+            .category {
+                font-size: 24px; 
+            }
+
+            img {
+                max-height: 150px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="category">GARMENTS</h1>
+    <table cellspacing="50">
+        <tr>
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/cardigan crochet.png" />
+                        <p> Plain White Cardigan</p>
+                        <p> Garments </p>
+                        <p class="price"> P860.00 </p>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/cool scarf.png" />
+                        <p> Neck Scarf</p>
+                        <p> Garments </p>
+                        <p class="price"> P150.00 </p>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/hat crochet.png" />
+                        <p> Winter Hat</p>
+                        <p> Garments </p>
+                        <p class="price"> P135.00 </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/leg warmers.png" />
+                        <p> Leg Warmers</p>
+                        <p> Garments </p>
+                        <p class="price"> P80.00 </p>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/scarf.png" />
+                        <p> Brazen Snake Scarf</p>
+                        <p> Garments </p>
+                        <p class="price"> P350.00 </p>
+                    </div>
+                </div>
+            </td>
+
+            <td>
+                <div class="outerproduct">
+                    <div class="innerproduct">
+                        <img src="../garments/simple scarf.png" />
+                        <p> Widespan Warmers</p>
+                        <p> Garments </p>
+                        <p class="price"> P430.00 </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

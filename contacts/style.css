@@ -1,0 +1,340 @@
+@font-face {
+  font-family: Monument;
+  src: url(Monument.otf);
+}
+
+@font-face {
+  font-family: Rustic Printed;
+  src: url(Rustic\ Printed\ Regular.ttf);
+}
+
+body{
+  background-image: url('contactspagebg.png');
+  height: auto; /* Set height to auto */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.contactsdivcontainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; 
+}
+
+.leftcontacts{
+  padding-top: 22px;
+  padding-left: 40px;
+  padding-right: 0px;
+  display: inline-block;
+  border: solid #264740 2px;
+  box-shadow: 10px 10px 0px rgba(32, 57, 52, 0.8);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #264740;
+  height: 372px;
+  width: 400px
+}
+
+.pin{
+  border-radius: 30px;
+  height: 229px;
+  width: 360px
+}
+
+.leftheader{
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: #969D5E;
+  font-family: Rustic Printed
+}
+
+.fblogo{
+  display: inline-block;
+  border-radius: 360px;
+  height: 45px;
+  width: 45px;
+}
+
+.fblogo:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.fblogo:active{
+  opacity: 0.7;
+}
+
+
+.xlogo{
+  display: inline-block;
+  border-radius: 360px;
+  height: 45px;
+  width: 45px;
+}
+
+.xlogo:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.xlogo:active{
+  opacity: 0.7;
+}
+
+.iglogo{
+  display: inline-block;
+  border-radius: 360px;
+  height: 45px;
+  width: 45px;
+}
+
+.iglogo:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.iglogo:active{
+  opacity: 0.7;
+}
+
+.emaillogo{
+  display: inline-block;
+  border-radius: 360px;
+  height: 45px;
+  width: 45px;
+}
+
+.emaillogo:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) ;
+}
+
+.emaillogo:active{
+  opacity: 0.7;
+}
+
+.leftcp{
+  width: 350px;
+  margin-top: 0;
+  font-size: 12px;
+  color: #969D5E;
+  font-family: Rustic Printed
+}
+
+.rightcontacts{
+  padding-top: 22px;
+  padding-left: 30px;
+  padding-right: 0px;
+  display: inline-block;
+  background-image: url('divcontactsbg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 10px 10px 0px rgba(32, 57, 52, 0.8);
+  border: solid #969D5E 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #969D5E;
+  height: 372px;
+  width: 382px
+}
+
+.uscontact{
+  padding-left: 40px;
+  margin-top:0;
+  margin-bottom:15px;
+  font-size: 30px;
+  font-family: Monument;
+  font-weight: 10px;
+  color: white;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
+  
+}
+.nmcontainer{
+  display: flex;
+  column-gap: 10px;
+}
+
+.divname{
+  display: inline-block;
+}
+
+.divemail{
+  display: inline-block;
+}
+
+.divsubject{
+  margin-top: 10px;
+}
+
+
+.divmessage{
+  margin-top: 10px;
+}
+
+.nameinput{
+  border-style: solid;
+  color: #264740;
+  border-radius: 8px;
+  border-color: #264740;
+  background: rgba(203, 207, 168, 0.5);
+  height: 30px;
+}
+
+.emailinput{
+  border-style: solid;
+  color: #264740;
+  border-radius: 8px;
+  border-color: #264740;
+  background: rgba(203, 207, 168, 0.5);
+  width: 100%;
+  height: 30px;
+}
+
+.subjectinput{
+  border-style: solid;
+  color: #264740;
+  border-radius: 8px;
+  border-color: #264740;
+  background: rgba(203, 207, 168, 0.5);
+  width: 100%;
+  height: 30px;
+}
+
+.messageinput{
+  border-style: solid;
+  border-width: 2px;
+  color: #264740;
+  border-radius: 8px;
+  border-color: #264740;
+  background: rgba(203, 207, 168, 0.5);
+  width:100%;
+  height: 100px;
+  resize: none;
+}
+
+.submittype{
+  background-color:#203934;
+  border-style: solid;
+  border-color: #203934;
+  color: white;
+  font-weight: bold;
+  border-width: 1px;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 36px;
+  width: 62px;
+  transition: background-color 0.15s, color 0.15s;
+}
+  
+.submittype:hover{
+  background-color:white;
+  color: #203934;
+}
+  
+.submittype:active{
+  opacity: 0.7;
+}
+
+.contactwrap{
+  padding-right: 40px;
+}
+
+.divsubmit{
+  margin-top: 10px;
+}
+
+.label{
+  font-size: 15px;
+  color: white;
+  font-family: Monument
+
+}
+
+#navbar {
+  font-family: 'Oswald';
+  overflow: hidden;
+  background-color: #225742; 
+  padding: 0;
+  transition: 0.4s;
+  width: 100%;
+  top: 0;
+  height: 22vh;
+  }
+
+  #navbar a {
+  margin-left: 80px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  }
+
+  #logo {
+  float: left;
+  height: 130px; 
+  transition: 0.8s;
+  padding: 10px -50px;
+  transform: translate(-50px, 5px);
+  }
+
+  #brand {
+  font-size: 50px;
+  transform: translate(-50px, 58.5px);
+  float: left;
+  color: #F6F0DB;
+  opacity: 100%;
+  transition: 0.3s ease;
+  }
+
+  #navbar-right {
+  transition: 0.4s;
+  float: right;
+  transform: translate(-70px, 72px); 
+  }
+
+  #navbar-right a {
+  font-size: 25px;
+  position: relative;
+  float: right;
+  text-decoration: none;
+  }
+
+  #navbar-right a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: transparent;
+  transition: 0.3s ease;
+  }
+
+  #navbar-right a:hover::before {
+  width: 100%;
+  /* Full width on hover */
+  background-color: white;
+  }
+
+  @media screen and (max-width: 580px) {
+  #navbar {
+      padding: 20px 10px;
+  }
+
+  #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+
+  #navbar-right {
+      float: none;
+  }
+  }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> The Lilypad | Home </title>
+<link href='https://fonts.googleapis.com/css?family=Oswald|Orbitron|Alike Angular' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.html"  ><img src="Leafy.png" id="logo"> <h1 id="brand"> THE LILYPAD </h1></a>
+ 
+  <div id="navbar-right">
+    <a href="contacts/contacts.html">Contact</a>
+	 <a href="product/layout.html">Product</a>
+	 
+    <a href="about.html">About</a>
+	  <a class="active" href="product/layout.html">Home</a>
+  </div>
+</div>
+
+
+<script>
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const navbar = document.getElementById("navbar");
+  const navbarRight = document.getElementById("navbar-right");
+  const logo = document.getElementById("logo");
+
+  if (document.body.scrollTop > 90|| document.documentElement.scrollTop > 90) {
+    navbar.style.padding = "0px 0px";
+    navbarRight.style.transform = "translate(-70px, 72px)";
+	navbar.style.height="22%"
+    logo.style.height = "130px";
+	logo.style.transform="translate(-50px, 5px)";
+    navbar.classList.add("nav-colored");
+	document.getElementById("brand").style.opacity="100%";
+  } else {
+    navbar.style.padding = "20px 100px";
+	navbar.style.height="30%"
+    navbarRight.style.transform = "translate(40px, 70px) ";
+    logo.style.height = "210px";
+	logo.style.transform="translate(-130px, -40px)";
+    navbar.classList.remove("nav-colored");
+	document.getElementById("brand").style.opacity="0%";
+  }
+}
+</script>
+
+<div style="margin-top:300px;">
+  <div id="n_arrivals" style="margin-top:220px;">
+  <div id="new">
+  <b>
+  NEW  <br> ARRIVALS
+  </b>
+  </br>
+  <p id="caption"> "Gear up for the wild with our swamp-chic collection! <br>
+  Don't 'moss' out on these stylish picks!" - This 
+  <br>collection features a frog keychain, lily coasters and a
+  <br>crocodile plushie. "
+  </p>
+  <form action="https://www.canva.com/design/DAF0grRyIQA/kMn28K736-fH-6_ed4tWzA/edit">
+  <button class="button"> Shop now! </button>
+  </form>
+  </div>
+  
+	<div id="n_a_pic">
+	<img src="swamp.jpg">
+	</div>
+</div>
+<div id="second">
+<div class="comingsoon">
+    <h1 id="csoon">Coming Soon...</h1>
+  </div>
+  <div class="aaargh">
+    <p> Aaargh! Something extraordinary is sprouting in</p>
+	<p>our crochet garden. Unravel the mystery with us </p>
+	<p>soon!</p>
+  </div>
+  <div class= plants>
+  <img src="PVZ.png" alt="Plants vs Zombies" width="750" height="550">
+  </div>
+</div>
+
+ <div class="mall">
+        <img src="mallbg.jpg">
+        <div class="title">
+            <h1>#TheLilyPadPopUp</h1>
+        </div>
+ </div>
+    <div class="bottom-section">
+        <div class="news text">
+          <p>  Exciting news! 'The LilyPad' is coming to a mall near you <br>
+		  with an exclusive pop-up store! Get ready to immerse <br>
+		  yourself in nature-inspired crochet delights. Stay tuned<br>
+		  for the grand reveal and mark your calendars! </p>
+        </div>
+    </div>
+	
+<div class="vegan-container">
+  <div class="vegan">
+    <h1>"Crafted with Heart, Sustainably Vegan: </br> Unveiling Our Brand's Ethical Yarn Journey!“</h1>
+  </div>
+  <div class="mark">
+  <img src="Leafy.png" width="275" height="275">
+  </div>
+</div>
+
+<a href="https://www.canva.com/design/DAF0grRyIQA/kMn28K736-fH-6_ed4tWzA/edit" class="join-link" >
+ <div class="middle"> 
+        <div class="join"> <h1> Join our<br>Team </h1> 
+        </div> 
+    </div>
+</a>
+    <div class="prompt">
+        <div class="logofooter"> 
+            <a href="" target=_blank> <img class="f-logo" src="ig.png"> </a>
+            <a href="https://www.facebook.com/TheLilypadCrochets" target=_blank> <img class="f-logo"src="fb.png"> </a>
+            <a href="" target=_blank> <img class="f-logo" src="x.png"> </a>
+        </div>
+		
+        <p> thelilypadshop@lilypad.shop</p>
+        <p> +63 917 483 951</p>
+        <p> Manila, Philippines </p>
+
+    </div>
+    <div id="background"> </div>
+	
+</div>
+</body>
+</html>
