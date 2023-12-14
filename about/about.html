@@ -138,19 +138,23 @@ vegan yarns. Step into a world where creativity meets<br>
 <h1> THE ARTISANS <h1>
 </div>
 
-<div class="pictures">
-<center>
-<img src="ck.png" class="pic-right">
-<img src="dann.png" class="pic-right">
-<img src="joms.png" class="pic-right">
-<img src="jacob.png" class="pic-right">
-<img src="kelv.png" class="pic-right">
-<img src="shan.png" class="pic-right">
-</center>
+<div id="artisans-pictures" class="pictures">
+  <center>
+    <table>
+      <tr>
+        <td><img src="ck.png" class="pic-right"></td>
+        <td><img src="dann.png" class="pic-right"></td>
+        <td><img src="joms.png" class="pic-right"></td>
+      </tr>
+      <tr>
+        <td><img src="jacob.png" class="pic-right"></td>
+        <td><img src="kelv.png" class="pic-right"></td>
+        <td><img src="shan.png" class="pic-right"></td>
+      </tr>
+    </table>
+  </center>
 </div>
-
 </div>
-
 </div>
 
     <div class="prompt">
@@ -166,7 +170,30 @@ vegan yarns. Step into a world where creativity meets<br>
 
     </div>
     <div id="background"> </div>
-	
 
+<script>
+  const artisansPictures = document.getElementById('artisans-pictures');
+  const pics = artisansPictures.querySelectorAll('.pic-right');
+
+        pics.forEach((pic, index) => {
+            pic.style.transitionDelay = `${index * 0.1}s`;
+            pic.style.transform = 'translateY(0)';
+        });
+
+        // Apply an animation on hover
+        artisansPictures.addEventListener('mouseenter', () => {
+            pics.forEach((pic, index) => {
+                pic.style.transitionDelay = `${index * 0.1}s`;
+                pic.style.transform = 'translateY(-20px)';
+            });
+        });
+
+        artisansPictures.addEventListener('mouseleave', () => {
+            pics.forEach((pic, index) => {
+                pic.style.transitionDelay = `${index * 0.1}s`;
+                pic.style.transform = 'translateY(0)';
+            });
+        });
+</script>
 </body>
 </html>

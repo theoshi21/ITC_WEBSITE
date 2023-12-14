@@ -142,7 +142,7 @@ hr{
 	margin-top: -120px;
 	position:relative;
 	background-image:url('about gradient.jpg');
-	height:2800px;
+	height:2500px;
 	background-repeat: repeat-y;
 	 background-size: auto;
 }
@@ -164,9 +164,9 @@ hr{
 
 .artisan{
     width: 100%;
-    height: 50vh; 
+    height: 45vh; 
     display: flex;
-    align-items: flex-start; 
+    align-items: flexbox; 
     justify-content: center;
     text-align: center;
 	color: white;
@@ -178,20 +178,54 @@ hr{
 }
 	
 .artisan h1{
-	margin-top: 300px;
+	margin-top: 100px;
+}
+
+.pictures {
+  text-align: center;
+}
+
+.pictures td {
+  padding: 10px;
 }
 
 .pic-right {
-	
-	margin-top: 75px;
-	margin-left: 30px;
-	height: 365px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  display: block;
+  margin: auto; /* Center images within table cells */
+  border-radius: 10%;
+}
+
+table {
+  margin-top: -210px;
+}
+
+.pictures td:hover .pic-right {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+.pic-right {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  display: inline-block;
+  margin: 10px; /* Adjust as needed */
+  border-radius: 10%;
+}
+
+.pictures:hover .pic-right {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+.pic-right {
+  margin-top: 30px;
+  margin-left: 80px;
+  height: 365px;
+  border-radius: 10%;
 }
 
 .mark {
-      	
       transform: translate(0px, 80px);
- 
 	}
 
 
@@ -220,6 +254,10 @@ hr{
     transition: .1s;
 }
 
+.logofooter a:hover{
+  background-color: #E7DECC;
+  border: 12px solid #E7DECC;
+}
 
 .logofooter {
     display: flex;
