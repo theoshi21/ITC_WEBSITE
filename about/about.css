@@ -220,10 +220,6 @@ hr{
     transition: .1s;
 }
 
-.logofooter a:hover{
-  background-color: #E7DECC;
-  border: 12px solid #E7DECC;
-}
 
 .logofooter {
     display: flex;
