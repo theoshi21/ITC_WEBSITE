@@ -298,15 +298,15 @@ letter-spacing: 3px;
 
 .middle .join{
     display: flex;
-  
-    height: 38vh;
+
+    height: 100%;
     align-items: flex-end;
     color: white;
     text-align: right;
     font-family: orbitron;
     font-size: 30px;
-    padding: 20px;
-	transform: translate(70%, 5%);
+    padding-top: 10px;
+	transform: translate(85%, 0%);
     text-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 .prompt{
@@ -333,10 +333,7 @@ letter-spacing: 3px;
     transition: .1s;
 }
 
-.logofooter a:hover{
-  background-color: #E7DECC;
-  border: 12px solid #E7DECC;
-}
+
 
 .logofooter {
     display: flex;
