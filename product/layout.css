@@ -57,6 +57,7 @@ img {
   text-decoration-line: underline;
 }
 
+
 .price {
   
   margin-top: 3vh;
@@ -64,7 +65,7 @@ img {
 
 .innerproduct .categ{
 font-style: italic;
- margin-top: -2vh;
+ margin-top: 0px;
 }
 
 .innerproduct:hover {
