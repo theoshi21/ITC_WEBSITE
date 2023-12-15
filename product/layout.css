@@ -68,15 +68,18 @@ img {
 }
 
 .price {
-  color: #264740;
+    
+  margin-top: 3vh;
 }
 
 .categ{
-  font-style: italic;
+ font-style: italic;
+ margin-top: -2vh;
 }
 
 .innerproduct:hover {
-  background-color: #97bb2a;
+  background-color:  #59763E;
+   color: white;
 }
 
 @media screen and (max-width: 600px) {
