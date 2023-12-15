@@ -189,34 +189,12 @@ hr{
   padding: 10px;
 }
 
-.pic-right {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-  display: block;
-  margin: auto; /* Center images within table cells */
-  border-radius: 10%;
-}
+
 
 table {
   margin-top: -210px;
 }
 
-.pictures td:hover .pic-right {
-  opacity: 1;
-  transform: translateX(-50%);
-}
-.pic-right {
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-  display: inline-block;
-  margin: 10px; /* Adjust as needed */
-  border-radius: 10%;
-}
-
-.pictures:hover .pic-right {
-  opacity: 1;
-  transform: translateX(-50%);
-}
 .pic-right {
   margin-top: 30px;
   margin-left: 80px;

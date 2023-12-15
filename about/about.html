@@ -171,29 +171,6 @@ vegan yarns. Step into a world where creativity meets<br>
     </div>
     <div id="background"> </div>
 
-<script>
-  const artisansPictures = document.getElementById('artisans-pictures');
-  const pics = artisansPictures.querySelectorAll('.pic-right');
 
-        pics.forEach((pic, index) => {
-            pic.style.transitionDelay = `${index * 0.1}s`;
-            pic.style.transform = 'translateY(0)';
-        });
-
-        // Apply an animation on hover
-        artisansPictures.addEventListener('mouseenter', () => {
-            pics.forEach((pic, index) => {
-                pic.style.transitionDelay = `${index * 0.1}s`;
-                pic.style.transform = 'translateY(-20px)';
-            });
-        });
-
-        artisansPictures.addEventListener('mouseleave', () => {
-            pics.forEach((pic, index) => {
-                pic.style.transitionDelay = `${index * 0.1}s`;
-                pic.style.transform = 'translateY(0)';
-            });
-        });
-</script>
 </body>
 </html>
