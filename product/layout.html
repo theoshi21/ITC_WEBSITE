@@ -30,20 +30,7 @@
             </ul>
         </div>
     </div>
-    <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            // Set the initial height
-            setIframeHeight();
-    
-            // Update the iframe height when the window is resized
-            window.addEventListener('resize', setIframeHeight);
-        });
-    
-        function setIframeHeight() {
-            var sidebarHeight = document.getElementById('mySidebar').clientHeight;
-            document.getElementsByName('productsiframe')[0].style.height = sidebarHeight + 'px';
-        }
-    </script>
+
 
     <div class="products">
         <iframe src="allproduct/allproduct.html" name="productsiframe"></iframe>
