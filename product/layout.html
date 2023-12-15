@@ -20,7 +20,7 @@
       </div>
 
     <div class="wrapper">
-        <div class="sidebar">
+        <div class="sidebar" id="mySidebar">
             <ul>
                 <li><a href="allproduct/allproduct.html" target="productsiframe"><img src="allprod.png" />ALL PRODUCT</a></li>
                 <li><a href="keychains/keychain.html" target="productsiframe"><img src="keychain.png" />KEYCHAINS</a></li>
@@ -30,6 +30,20 @@
             </ul>
         </div>
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            // Set the initial height
+            setIframeHeight();
+    
+            // Update the iframe height when the window is resized
+            window.addEventListener('resize', setIframeHeight);
+        });
+    
+        function setIframeHeight() {
+            var sidebarHeight = document.getElementById('mySidebar').clientHeight;
+            document.getElementsByName('productsiframe')[0].style.height = sidebarHeight + 'px';
+        }
+    </script>
 
     <div class="products">
         <iframe src="allproduct/allproduct.html" name="productsiframe"></iframe>

@@ -143,3 +143,30 @@
             float: none;
         }
         }
+
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                width: 100%;
+            }
+        
+            .wrapper .sidebar {
+                width: 100%;
+                height: auto;
+            }
+        
+            .wrapper .sidebar ul li a {
+                font-size: 24px; /* Adjust font size for smaller screens */
+                padding: 15px;
+            }
+        
+            .products {
+                width: 100%;
+                height: auto; /* Adjust height as needed */
+            }
+        
+            iframe {
+                width: 100%;
+                height: auto; /* Adjust height as needed */
+            }
+        }
