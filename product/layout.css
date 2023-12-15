@@ -1,13 +1,12 @@
 body {
-  background: url('shopbg.png');
-  background-repeat:no-repeat;
-  background-size: 100%;
-  
+  background: url(shopbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 table {
   width: 100%;
-  max-width: 1000vw; 
+  max-width: 1500px; 
   margin: 0 auto; 
 }
 
@@ -15,10 +14,9 @@ table {
   box-shadow: 0px 0px 0px 10px rgba(136, 209, 101, 0.35);
   background-color: rgba(136, 209, 101, 0.35);
   border-radius: 5px;
-  width: 40vh;
-  height: 50vh; 
+  width: 100%; 
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .innerproduct {
@@ -26,7 +24,7 @@ table {
   border-radius: 20px;
   width: 100%;
   text-align: center;
-  color: #264740;
+  color: white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-size: 20px; 
@@ -41,36 +39,32 @@ img {
   border-radius: 10px;
   display: block;
   margin: 15px auto; 
-  width: 35vh;
-  height: 30vh; 
-  max-height: 220px; 
+  width: 90%;
+  height: auto; 
+  max-height: 200px; 
 }
 
 .category {
   color: #4D5B36;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  font-size: 40px;
+  font-size: 30px;
   font-family: Oswald;
   letter-spacing: 5px;
   text-indent: 4%;
   text-decoration-line: underline;
 }
 
-
 .price {
-  
-  margin-top: 3vh;
+  color: #264740;
 }
 
-.innerproduct .categ{
-font-style: italic;
- margin-top: 0px;
+.categ{
+  font-style: italic;
 }
 
 .innerproduct:hover {
- background-color: #59763E;
- color: white;
+  background-color: #97bb2a;
 }
 
 @media screen and (max-width: 600px) {
@@ -82,8 +76,7 @@ font-style: italic;
       font-size: 24px; 
   }
 
-}
-
-s {
-  margin-right: 30px;
+  img {
+      max-height: 150px; 
+  }
 }
